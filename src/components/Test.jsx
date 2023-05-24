@@ -3,13 +3,13 @@ import Link from "next/link"
 import React from "react"
 import { usePathname } from "next/navigation"
 const Test = () => {
-    const pathName = usePathname()
-	console.log(pathName)
-	if(pathName.includes("/dashboard")){
-		return null
-	}
+    // const pathName = usePathname()
+	// console.log(pathName)
+	// if(pathName.includes("/dashboard")){
+	// 	return null
+	// }
 
-	if(pathName.includes("sign-up")) return null;
+	// if(pathName.includes("sign-up")) return null;
 	return (
 		<nav class='bg-white border-gray-200 dark:bg-gray-900'>
 			<div class='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
