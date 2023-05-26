@@ -1,8 +1,9 @@
 import React from "react";
+import {MdAlternateEmail} from "react-icons/md"
 
 const UserCard = ({name, role,avatar,email,id}) => {
   return (
-    <div className="card w-full md:w-[200px] bg-base-100 shadow-xl">
+    <div className="card w-full md:w-[310px] dark:text-slate-300 bg-base-100 shadow-xl">
       <div className="card-body">
         <div className="avatar flex justify-center">
           <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">

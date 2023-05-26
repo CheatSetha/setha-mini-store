@@ -3,7 +3,7 @@ import Link from "next/link"
 import React from "react"
 import { usePathname } from "next/navigation"
 const Test = () => {
-    // const pathName = usePathname()
+	// const pathName = usePathname()
 	// console.log(pathName)
 	// if(pathName.includes("/dashboard")){
 	// 	return null
@@ -13,8 +13,8 @@ const Test = () => {
 	return (
 		<nav class='bg-white border-gray-200 dark:bg-gray-900'>
 			<div class='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-				<a
-					href='https://flowbite.com/'
+				<Link
+					href={"/"}
 					class='flex items-center'
 				>
 					<img
@@ -23,9 +23,9 @@ const Test = () => {
 						alt='Flowbite Logo'
 					/>
 					<span class='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
-						Setha 
+						Setha
 					</span>
-				</a>
+				</Link>
 				<div class='flex items-center md:order-2'>
 					<button
 						type='button'
@@ -36,7 +36,6 @@ const Test = () => {
 						data-dropdown-placement='bottom'
 					>
 						<span class='sr-only'>Open user menu</span>
-						
 					</button>
 
 					<div

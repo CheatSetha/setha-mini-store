@@ -20,8 +20,7 @@ export async function generateMetadata({ params }) {
 		image: product.images,
 		openGraph: {
 			type: "website",
-			
-			
+
 			url: `https://escuelajs.co/product/${id}`,
 			title: product.title,
 			description: product.description,
@@ -37,7 +36,6 @@ export async function generateMetadata({ params }) {
 }
 
 const page = async ({ params }) => {
-
 	const { id } = params
 
 	const product = await getProductDetails(id)
@@ -54,6 +52,37 @@ const page = async ({ params }) => {
 				<h2 className='card-title'>
 					{product.title ? product.title : "Loading..."}
 				</h2>
+				<div className='rating'>
+					<input
+						type='radio'
+						name='rating-4'
+						className='mask mask-star-2 bg-green-500'
+					/>
+					<input
+						type='radio'
+						name='rating-4'
+						className='mask mask-star-2 bg-green-500'
+						checked
+					/>
+					<input
+						type='radio'
+						name='rating-4'
+						className='mask mask-star-2 bg-green-500'
+					/>
+					<input
+						type='radio'
+						name='rating-4'
+						className='mask mask-star-2 bg-green-500'
+					/>
+					<input
+						type='radio'
+						name='rating-4'
+						className='mask mask-star-2 bg-green-500'
+					/>
+				</div>
+				<h1 className='text-3xl md:text-green-500 md:mt-4'>
+					$ {product.price}
+				</h1>
 				<p>{product.description}.</p>
 			</div>
 		</div>

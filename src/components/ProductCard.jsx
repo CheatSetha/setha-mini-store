@@ -16,13 +16,13 @@ const Card = ({ id, title, price, img }) => {
 					/>
 				</figure>
 				<div className='card-body'>
-					<h1 className='text-slate-700 text-xl'>
+					<h1 className=' text-xl'>
 						{title ? title : "おはようございます。"}
 					</h1>
 					
 					<div className="flex justify-between">
 					<h1 className='test-2xl font-bold'>$ {price}</h1>
-					<TfiShoppingCart className=" bg-slate-100 rounded-full  w-10 h-10 p-2 "/>
+					<TfiShoppingCart className=" bg-slate-100 dark:bg-sky-400  rounded-full  w-10 h-10 p-2 "/>
 					</div>
 					
 				</div>
