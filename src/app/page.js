@@ -72,7 +72,7 @@ export default async function Home() {
       </div>
       <h4 className=' font-bold text-center  my-7 text-3xl'>Top users</h4>
 
-      <div className=' w-full justify-center flex flex-wrap gap-3 '>
+      <div className=' w-full justify-center flex flex-wrap gap-3 mb-3 '>
         
         {users.map((u) => (
           <UserCard

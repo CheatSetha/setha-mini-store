@@ -1,5 +1,6 @@
 import React from "react";
 import {MdAlternateEmail} from "react-icons/md"
+import {FaUserAlt} from "react-icons/fa"
 
 const UserCard = ({name, role,avatar,email,id}) => {
   return (
@@ -14,8 +15,8 @@ const UserCard = ({name, role,avatar,email,id}) => {
         </div>
 
         <h2 className="card-title flex justify-center">{name? name : "setha"}</h2>
-        <p> {email?email: "setha@gmail.com"}</p>
-        <p>{role?role:" admin"}</p>
+        <p><MdAlternateEmail className="inline"/> {email?email: "setha@gmail.com"}</p>
+        <p><FaUserAlt className="inline" /> {role?role:" admin"}</p>
 
       </div>
     </div>
