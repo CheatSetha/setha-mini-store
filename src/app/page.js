@@ -13,8 +13,8 @@ export const metadata = {
 	openGraph: {
 	  title: 'ISTAD-HOME',
 	  description: 'This is my app',
-	  url: 'https://next-v13-with-form-upload-file.vercel.app/',
-	  images: "/images/alien.png",
+	  url: 'https://setha-mini-store.vercel.app/',
+	  images: "https://nypost.com/wp-content/uploads/sites/2/2017/09/feature.jpg?quality=75&strip=all",
 	},
 	twitter: {
 	  title: 'My App',
