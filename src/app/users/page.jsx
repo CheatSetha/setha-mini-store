@@ -31,7 +31,7 @@ export async function getUsers() {
 const page = async () => {
 	const users = await getUsers()
 	return (
-		<div>
+		<div className="w-[90%] mx-auto">
 			<h1 className='text-4xl font-bold text-center my-10 text-green-700'>
 				List of all users
 			</h1>
